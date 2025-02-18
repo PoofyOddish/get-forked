@@ -62,4 +62,4 @@ with bottom_menu[0]:
     st.markdown(f"Page **{current_page}** of **{total_pages}** ")
 
 pages = split_frame(pd_df, batch_size)
-pagination.dataframe(data=pages[current_page - 1], use_container_width=True,hide_index=True)
+pagination.table(data=pages[current_page - 1])
